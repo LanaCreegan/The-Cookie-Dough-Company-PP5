@@ -1,5 +1,5 @@
 ---
-name: User Story Template Developer
+name: User Story Template
 about: Describe this issue template's purpose here.
 title: ''
 labels: ''
@@ -7,10 +7,9 @@ assignees: ''
 
 ---
 
-As a developer I want to be able to ** so that I can **
+As a Site User I want to *** so that I can **
 
 Acceptance Criteria:
-**
-
+***
 Tasks:
-**
+***
