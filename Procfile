@@ -1,0 +1,1 @@
+web: gunicorn cookie_dough_company.wgsi:application
