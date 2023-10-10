@@ -94,9 +94,29 @@ The Cookie Dough Company is an e-commerce website in the field of food
 ### Deployment 
 #### Github
 #### Forking
-#### Clone
+#### Clone 
+The repository can be cloned by following these steps:
+
+- Log into GitHub and go to the GitHub Repository
+- Click on the code button on the right above the files list
+- Then select HTTPS and copy the URL
+- Open Git Bash
+- Change the current working to the location you want the cloned directory to be
+- Type git clone and paste the URL from earlier
+- Press enter to create the local clone
 
 #### Heroku 
+- Go to the Heroku website (https://www.heroku.com/)
+- Login to Heroku and select Create App
+- Click New and Create a new app
+- Enter a name and select location
+- Click on create new app
+- Go to the Settings tab
+- Add all nessecary config vars
+- Navigate to the Deploy tab
+- Click on Connect to Github and search for the repository
+- Navigate to enable automatic deployments and enable
+- Navigate to manual deploy and click on deploy branch
 
 #### Stripe
 
