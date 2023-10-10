@@ -1,1 +1,1 @@
-web: gunicorn cookie_dough_company.wgsi:application
+web: gunicorn cookie_dough_company.wsgi:application
