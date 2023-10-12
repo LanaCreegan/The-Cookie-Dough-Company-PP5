@@ -9,8 +9,10 @@ body {
     background: url('/media/cookie.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #011C27;
     font-family: 'Montserrat';
 }
+
+
 
 
