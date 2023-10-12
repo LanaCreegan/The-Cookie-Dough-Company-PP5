@@ -13,6 +13,16 @@ body {
     font-family: 'Montserrat';
 }
 
+#logo, .content {
+    color: #F1F5F2;
+}
 
 
+.dropdown-item {
+    color: #F1F5F2;
+}
+
+p {
+    color: #F1F5F2;
+}
 
