@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/cookie.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Montserrat';
+}
+
+
