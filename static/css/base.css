@@ -17,11 +17,6 @@ body {
     color: #F1F5F2;
 }
 
-
-.dropdown-item {
-    color: #F1F5F2;
-}
-
 p {
     color: #F1F5F2;
 }
@@ -34,7 +29,4 @@ p {
     width: 1.5rem;
 }
 
-.btn-black {
-    background: white;
-    color: white;
-}
+
