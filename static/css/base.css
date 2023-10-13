@@ -29,4 +29,8 @@ p {
     width: 1.5rem;
 }
 
+#home-link, #products-link {
+    color: #F1F5F2;
+}
+
 
