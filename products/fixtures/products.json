@@ -1,0 +1,130 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001340155",
+          "name":"he Salted Caramel Cookies Box",
+          "description":"This box includes 6 Salted Caramel cookies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days.",
+          "price":18.00,
+          "category":6,
+          "rating":4.6,
+          "image_url":"https://unsplash.com/photos/OfdDiqx8Cz8",
+          "image":"salted-min.jpg"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001600425",
+          "name":"The Milk Chocolate Chip Cookies Box",
+          "description":"This box includes 6 Milk Chocolate Chip cookies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days.",
+          "price":18.00,
+          "category":4,
+          "rating":4.6,
+          "image_url":"https://unsplash.com/photos/rjf4FcmERGc",
+          "image":"milk.jpg"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001730010",
+          "name":"The Double Chocolate Chip Cookies Box",
+          "description":"This box includes 6 Double Chocolate Chip cookies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days.",
+          "price":18.00,
+          "category":2,
+          "rating":4.7,
+          "image_url":"https://unsplash.com/photos/Ms9xBg3Gtr8",
+          "image":"double-chocolate-min.jpg"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001890157",
+          "name":"The Loftus Biscoff Stuffed Cookies Box",
+          "description":"This box includes 6 Loftus Biscoff Stuffed cookies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days.",
+          "price":19.00,
+          "category":7,
+          "rating":3.0,
+          "image_url":"https://unsplash.com/photos/EnPlEZI4WfM",
+          "image":"biscoff.jpg"
+       }
+    },
+    {
+       "pk":5,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5002111605",
+          "name":"The Orange Flavoured Cookies Box",
+          "description":"This box includes 6 Orange Flavoured Chocolate Chip cookies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days. ",
+          "price":18.00,
+          "category":7,
+          "rating":5.0,
+          "image_url":"https://unsplash.com/photos/4fl4XVhH8Y4",
+          "image":"orange-min.jpg"
+       }
+    },
+    {
+       "pk":6,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5002111605",
+          "name":"The Taster Box",
+          "description":"Try one of each of our signature flavours. This box includes all of our cookies products. 6 cookies are in this box (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days. ",
+          "price":18.00,
+          "category":7,
+          "rating":5.0,
+          "image_url":"https://unsplash.com/photos/H1uISjlRXJE",
+          "image":"mixed-box.jpg"
+       }
+    },
+    {
+       "pk":7,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5002111605",
+          "name":"The Mixed Box",
+          "description":"This box includes 3 Chocolate chip and 3 Double Chocolate Chip cookies are included in this box (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days. ",
+          "price":18.00,
+          "category":7,
+          "rating":5.0,
+          "image_url":"https://unsplash.com/photos/4Mh3AjljekQ",
+          "image":"mix-min.jpg"
+       }
+    },
+    {
+       "pk":8,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5002111605",
+          "name":"The Brownie Box",
+          "description":"This box includes 6 Chocolate Flavoured Brownies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days. ",
+          "price":19.00,
+          "category":7,
+          "rating":5.0,
+          "image_url":"https://unsplash.com/photos/1rqk6XVnw44",
+          "image":"brownie-min.jpg"
+ 
+       } 
+    },
+    {
+       "pk":9,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5002111605",
+          "name":"The Sprinkle Cookies Box",
+          "description":"This box includes 6 Sprinkle Cookies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days. ",
+          "price":19.00,
+          "category":7,
+          "rating":5.0,
+          "image_url":"https://unsplash.com/photos/JnpoOdKCm1Q",
+          "image":"sprinkle.jpg"
+ 
+       }  
+    }, 
+ ]
