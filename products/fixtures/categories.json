@@ -1,0 +1,16 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "cookie",
+        "friendly_name": "Cookie"
+    }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "brownie",
+        "friendly_name": "Brownie"
+    }
+},
+]
