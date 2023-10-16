@@ -3,7 +3,7 @@
        "model":"products.product",
        "fields":{
           "sku":"pp5001340155",
-          "name":"he Salted Caramel Cookies Box",
+          "name":"The Salted Caramel Cookies Box",
           "description":"This box includes 6 Salted Caramel cookies (Contains eggs, wheat, milk, barley, soya) Shipped on Wednesdays for delivery Thursday/Friday, order cut off is 12pm on Tuesdays. Store your products in an airtight container for up to 3 days.",
           "price":18.00,
           "category":1,
@@ -47,7 +47,7 @@
           "price":19.00,
           "category":1,
           "image_url":"https://unsplash.com/photos/EnPlEZI4WfM",
-          "image":"biscoff.jpg"
+          "image":"biscoff-min.jpg"
        }
     },
     {
