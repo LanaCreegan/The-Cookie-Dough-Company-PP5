@@ -50,3 +50,15 @@ p {
 .text-muted {
     color: #F1F5F2 !important;
 }
+
+
+/* -------------------------------- Media Queries */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
