@@ -10,6 +10,10 @@
             <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products
             </a>
+            <div class="dropdown-menu border-0 bg-white" aria-labelledby="cookie-link">
+                <a href="{% url 'products' %}?category=cookies" class="dropdown-item text-better-white">Cookies</a>
+                <a href="{% url 'products' %}?category=brownies" class="dropdown-item text-better-white">Brownies</a>
+            </div>
         </li>
     </ul>
 </div>
