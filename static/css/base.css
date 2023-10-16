@@ -29,7 +29,7 @@ p {
     width: 1.5rem;
 }
 
-#home-link, #products-link {
+#home-link, #products-link, #product-link {
     color: #F1F5F2;
 }
 
@@ -53,6 +53,10 @@ p {
 
 .main-logo-link {
     width: fit-content;
+}
+
+.nav-link {
+
 }
 
 /* -------------------------------- Media Queries */

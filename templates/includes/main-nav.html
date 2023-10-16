@@ -7,12 +7,12 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="product-link" class="nav-link dropdown-toggle font-weight-bold nav-link mr-5" href="{% url 'products' %}"  role="button" data-bs-toggle="dropdown" aria-expanded="false">>
                 Products
             </a>
-            <div class="dropdown-menu border-0 bg-white" aria-labelledby="cookie-link">
-                <a href="{% url 'products' %}?category=cookies" class="dropdown-item text-better-white">Cookies</a>
-                <a href="{% url 'products' %}?category=brownies" class="dropdown-item text-better-white">Brownies</a>
+            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="cookie-link">
+                <a href="{% url 'products' %}?category=cookie" class="dropdown-item text-white">Cookies</a>
+                <a href="{% url 'products' %}?category=brownie" class="dropdown-item text-white">Brownies</a>
             </div>
         </li>
     </ul>
