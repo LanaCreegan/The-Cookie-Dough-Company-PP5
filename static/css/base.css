@@ -17,7 +17,7 @@ body {
     color: #F1F5F2;
 }
 
-p {
+p, h2 {
     color: #F1F5F2;
 }
 
@@ -55,8 +55,9 @@ p {
     width: fit-content;
 }
 
-.nav-link {
-
+a.category-badge > span.badge:hover {
+    background: #fff !important;
+    color: #fff !important;
 }
 
 /* -------------------------------- Media Queries */
