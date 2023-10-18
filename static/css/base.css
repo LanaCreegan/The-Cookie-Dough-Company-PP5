@@ -13,7 +13,8 @@ body {
     font-family: 'Montserrat';
 }
 
-#logo, .content {
+#logo, 
+.content {
     color: #F1F5F2;
 }
 
@@ -29,7 +30,9 @@ p, h2 {
     width: 1.5rem;
 }
 
-#home-link, #products-link, #product-link {
+#home-link, 
+#products-link, 
+#product-link {
     color: #F1F5F2;
 }
 
@@ -43,7 +46,9 @@ p, h2 {
     z-index: -1;
 }
 
-.card-body, .col-card, .card-footer {
+.card-body, 
+.col-card, 
+.card-footer {
     background: #011C27 !important;
 }
 
@@ -64,6 +69,11 @@ a.category-badge > span.badge:hover {
     background: white;
     color: black !important;
     border: 1px solid black;
+}
+
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
