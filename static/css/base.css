@@ -9,18 +9,9 @@ body {
     background: url('/media/cookie.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #011C27;
     font-family: 'Montserrat';
 }
 
-#logo, 
-.content {
-    color: #F1F5F2;
-}
-
-p, h2 {
-    color: #F1F5F2;
-}
 
 .icon {
     align-items: center;
@@ -30,11 +21,6 @@ p, h2 {
     width: 1.5rem;
 }
 
-#home-link, 
-#products-link, 
-#product-link {
-    color: #F1F5F2;
-}
 
 .overlay {
     height: 100%;
@@ -56,7 +42,7 @@ p, h2 {
     color: #F1F5F2 !important;
 }
 
-.main-logo-link {
+.nav-link {
     width: fit-content;
 }
 
@@ -75,6 +61,22 @@ a.category-badge > span.badge:hover {
 .remove-item {
     cursor: pointer;
 }
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 
 /* -------------------------------- Media Queries */
 @media (min-width: 1200px) {

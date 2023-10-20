@@ -29,35 +29,38 @@
  
   <body>
     <header class="container-fluid fixed-top">
-      <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
+        <!-- Logo -->
+      <div class="row bg-white pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-              <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                  <h2 id="logo" class="my-0">The Cookie Dough Company</h2>
+              <a href="{% url 'home' %}" class="nav-link">
+                  <h2 id="logo">The Cookie Dough Company</h2>
               </a>
           </div>
+          <!-- Search Bar -->
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <form method="GET" action="{% url 'products' %}">
                   <div class="input-group w-100">
-                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                      <input class="form-control me-2" type="text" name="q" placeholder="Search our site">
                       <div class="input-group-append">
-                          <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                              <span class="icon">
+                          <button class="btn search-btn text-black border" type="submit">
                                   <i class="fas fa-search"></i>
-                              </span>
                           </button>
                       </div>
                   </div>
               </form>
           </div>
+
+          <!-- Accounts menu -->
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                  <li class="list-inline-item dropdown">
+                  <li class="list-inline-item dropdown pr-3">
                       <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
+                            <div class="icon"><i class="fas fa-user fa-lg"></i></div>
                               <p class="my-0">My Account</p>
                           </div>
                       </a>
-                      <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                      <div class="dropdown-menu" aria-labelledby="user-options">
                           {% if request.user.is_authenticated %}
                               {% if request.user.is_superuser %}
                                   <a href="" class="dropdown-item">Product Management</a>
