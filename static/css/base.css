@@ -32,15 +32,6 @@ body {
     z-index: -1;
 }
 
-.card-body, 
-.col-card, 
-.card-footer {
-    background: #011C27 !important;
-}
-
-.text-muted {
-    color: #F1F5F2 !important;
-}
 
 .nav-link {
     width: fit-content;
