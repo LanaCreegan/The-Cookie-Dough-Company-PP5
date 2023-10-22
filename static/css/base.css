@@ -58,6 +58,7 @@ a.category-badge > span.badge:hover {
     top: 72px;
     right: 15px;
     z-index: 99999999999;
+    color: aqua;
 }
 
 .custom-toast {

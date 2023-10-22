@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+
 from products.models import Product
 
 
@@ -19,11 +20,11 @@ def add_to_bag(request, item_id):
 
 
     if item_id in list(bag.keys()):
-        bag[item_id] += quantity 
+        bag[item_id] += quantity
     else:
         bag[item_id] = quantity
-        message.success(request, f'Added {product.name} to your bag')
-
+        
+    messages.success(request, f'Added {product.name} to your bag')
     request.session['bag'] = bag
     return redirect(redirect_url)
 
