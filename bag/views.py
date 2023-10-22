@@ -31,13 +31,14 @@ def update_bag(request, item_id):
     """ Update a quantity of the specified product in the bag """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity') or 1)
+    quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
-
+        
     if quantity > 0:
         bag[item_id] = quantity
     else:
         bag.pop(item_id)
-
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
+
+    
