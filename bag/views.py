@@ -16,14 +16,26 @@ def add_to_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+    filled = None
+    if 'is_filled' in request.POST:
+        filled = request.POST['product_is_filled']
     bag = request.session.get('bag', {})
 
+    if filled:
+        if item_id in list(bag.keys()):
+            if filled in bag[item_id][''].keys():
+                bag[item_id]['items_is_filled'][filled] += quantity
+            else:
+                bag[item_id]['items_is_filled'][filled] = quantity
+        else:
+            bag[item_id] = {'items_is_filled': {filled: quantity}}
 
-    if item_id in list(bag.keys()):
-        bag[item_id] += quantity
     else:
-        bag[item_id] = quantity
-        messages.success(request, f'Added {product.name} to your bag')
+        if item_id in list(bag.keys()):
+            bag[item_id] += quantity
+        else:
+            bag[item_id] = quantity
+            messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
