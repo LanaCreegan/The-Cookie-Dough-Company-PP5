@@ -41,17 +41,6 @@
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            {% with product.is_filled as f %}
-                            {% if f %}
-                                <div class="col-12">
-                                    <p><strong>Select from the following:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_is_filled" id='id_product_is_filled'>
-                                        <option value="filled" selected>Cookies are filled</option>
-                                        <option value="not_filled">Cookies are not filled</option>
-                                        <option value="mixed">Mix of filled & plain</option>
-                                    </select>
-                                </div>
-                            {% endif %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
