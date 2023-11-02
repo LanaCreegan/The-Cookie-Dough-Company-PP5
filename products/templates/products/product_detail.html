@@ -125,6 +125,7 @@
     </div>
 
 <!-- Reviews -->
+
 <div class="row mt-5 px-4">
     <div class="col-lg-6 ">
     {% if reviews %}
@@ -150,25 +151,25 @@
             </div>
         </div>
         <hr>
-
-        <div class="col-lg-6 ">
-            <h4>Add Review</h4>
-            <hr>
-            {% if user.is_authenticated %}
-                <form action="{% url 'product_detail' product.id %}" method="POST">
-                    {% csrf_token %}
-                    {% for field in form  %}
-                            <br>
-                            {{ field.errors }}
-                            {{ field.label }} *
-                            <br>
-                            {{ field }}
-                        {% endfor %}
-                    {% endif %}
-                    <button type="submit" class="btn link-btn">Add Review</button>
-                </form>
                 {% endfor %}
    {% endif %}
+
+   <div class="col-lg-6 ">
+    <h4>Add Review</h4>
+    <hr>
+    {% if user.is_authenticated %}
+        <form action="{% url 'product_detail' product.id %}" method="POST">
+            {% csrf_token %}
+            {% for field in form  %}
+                    <br>
+                    {{ field.errors }}
+                    {{ field.label }} *
+                    <br>
+                    {{ field }}
+                {% endfor %}
+            {% endif %}
+            <button type="submit" class="btn link-btn">Add Review</button>
+        </form>
 {% endblock %}
 
 {% block postloadjs %}
