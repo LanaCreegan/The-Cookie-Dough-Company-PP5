@@ -35,6 +35,7 @@ The Cookie Dough Company is an e-commerce website in the field of food
 ### Database Scheme 
 
 ### Business Model
+The business model for this store is a B2C (Business to Customer) model, as the business would be selling products directly from themselves to the customer.
 
 ### Marketing
 
@@ -44,8 +45,17 @@ The Cookie Dough Company is an e-commerce website in the field of food
 
 #### Links
 #### Search Bar
+- The Search Bar is located in the middle of the navbar and can be used to search for products
+
 #### Bag
+- The bag is located to the right on the navbar, next the the accounts menu
+- Users can see the total cost of the items in their bag underneath the bag icon
+- Clicking the bag icon brings users to the shopping bag page where they can see a summary of what they've added in
+
 #### Account
+- The accounts menu is located to the right on the navbar
+- Clicking the icons opens a dropdown menu 
+- If the user is signed in, the dropdown options are My Profile, Logout, and Product Management 
 
 ### Home Page
 

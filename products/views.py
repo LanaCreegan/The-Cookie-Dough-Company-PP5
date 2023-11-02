@@ -4,8 +4,11 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from reviews.models import Review
 from .models import Product, Category
 from .forms import ProductForm
+from reviews.forms import ReviewForm
+from profiles.models import UserProfile
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -61,9 +64,30 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.all().filter(product=product)
+    user_profile = get_object_or_404(UserProfile, user=request.user)
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            reviews.create(
+                user=user_profile,
+                product=product,
+                body=request.POST.get('body')
+            )
+            messages.success(request, 'Review sucessfully added')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request, 'Review Failed. Please try again.')
+            return redirect(reverse('product_detail', args=[product_id]))
+    else:
+        form = ReviewForm()
+        product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
+        'form': form,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
