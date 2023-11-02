@@ -128,7 +128,7 @@
 
 <div class="row mt-5 px-4">
     <div class="col-lg-6 ">
-    {% if reviews %}
+        {% if user.is_authenticated %}
         <h4>Reviews for {{ product.name }}</h4>
         <hr>
 
@@ -146,12 +146,36 @@
                <p class="d-inline small text-muted float-right">
                    {% if user.is_authenticated and user.id == review.user.id %}
                    <a href="{% url 'edit_reviews' review.id %}">edit</a> 
-                   <span>delete</span></p>
+                    <!-- Button triggering delete modal -->
+                    <button type="button" class="btn btn-sm text-danger" data-bs-toggle="modal" data-bs-target="#review-modal">
+                        Delete
+                    </button>
+
+                <!-- Modal for deleting review -->
+                <div class="modal fade" id="review-modal" tabindex="-1" aria-labelledby="warning" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="warning">Warning!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to delete your review?
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-sm" data-bs-dismiss="modal">Close</button>
+                        <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                    {% endif %}
             </div>
         </div>
         <hr>
                 {% endfor %}
+   {% else %}
+   <p>Please <a href="{% url 'account_login' %}">login</a> to leave a review.</p>
    {% endif %}
 
    <div class="col-lg-6 ">

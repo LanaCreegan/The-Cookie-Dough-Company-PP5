@@ -10,9 +10,7 @@ def edit_reviews(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     if request.user.id != review.user.user.id:
         messages.error(request, 'Sorry, you do not have access to that.')
-        return redirect(
-            reverse('product_detail', args=[review.product.id])
-            )
+        return redirect(reverse('product_detail', args=[review.product.id]))
     if request.method == 'POST':
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
@@ -20,9 +18,7 @@ def edit_reviews(request, review_id):
             messages.success(request, 'Successfully updated review!')
             return redirect(reverse('product_detail', args=[review.product.id]))
         else:
-            messages.error(
-                request,
-                'Failed to update review. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update review. Please ensure the form is valid.')
     else:
         form = ReviewForm(instance=review)
 
@@ -33,3 +29,16 @@ def edit_reviews(request, review_id):
     }
 
     return render(request, template, context)
+
+
+def delete_review(request, review_id):
+    """ Delete a review """
+    review = get_object_or_404(Review, pk=review_id)
+    if request.user.id != review.user.id:
+        messages.info(request, 'Sorry, you do not have access to that.')
+        return redirect(reverse('product_detail', args=[review.product.id]))
+    review.delete()
+    messages.success(request, 'Review successfully deleted!')
+    return redirect(reverse('product_detail', args=[review.product.id]))
+
+
