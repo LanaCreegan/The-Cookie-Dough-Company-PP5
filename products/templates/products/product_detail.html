@@ -123,21 +123,34 @@
             </div>
         </div>
     </div>
+
 <!-- Reviews -->
-    <div class="row mt-5 px-4">
-        <div class="col-6 ">
-            {% if product.reviews %}
-        <div class="col-lg-6 ">
-            {% if reviews %}
-            <h5>Reviews for {{ product.name }}</h5>
-            <hr>
-            {% else %}
-            <h5>There are no Reviews for {{ product.name }}</h5>
-            <h5>This Product has no reviews</h5>
-            <hr>
-            {% endif %}
+<div class="row mt-5 px-4">
+    <div class="col-lg-6 ">
+    {% if reviews %}
+        <h4>Reviews for {{ product.name }}</h4>
+        <hr>
+
+        {% for review in reviews %}
+        <div class="row mt-2">
+            <div class="col">
+                {{ review.body }}
+            </div>
         </div>
-        <div class="col-6 ">
+
+        <div class="row mt-1">
+            <div class="col">
+               <p class="d-inline font-italic small text-muted">by {{ review.user }} </p>
+               <br>
+               <p class="d-inline small text-muted float-right">
+                   {% if user.is_authenticated and user.id == review.user.id %}
+                   <a href="{% url 'edit_reviews' review.id %}">edit</a> 
+                   <span>delete</span></p>
+                   {% endif %}
+            </div>
+        </div>
+        <hr>
+
         <div class="col-lg-6 ">
             <h4>Add Review</h4>
             <hr>
@@ -145,18 +158,17 @@
                 <form action="{% url 'product_detail' product.id %}" method="POST">
                     {% csrf_token %}
                     {% for field in form  %}
-                            {{ field.label }} 
+                            <br>
+                            {{ field.errors }}
+                            {{ field.label }} *
                             <br>
                             {{ field }}
-                    {% endfor %}
-                    <button type="submit" class="btn">Add Review</button>
+                        {% endfor %}
+                    {% endif %}
+                    <button type="submit" class="btn link-btn">Add Review</button>
                 </form>
-            {% else %}
-            <p>Please <a href="{% url 'account_login' %}">login</a> to leave a review.</p>
-            {% endif %}
-        </div>
-    </div>
-    {% endif %}
+                {% endfor %}
+   {% endif %}
 {% endblock %}
 
 {% block postloadjs %}
