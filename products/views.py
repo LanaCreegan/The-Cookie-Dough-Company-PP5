@@ -65,7 +65,9 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.all().filter(product=product)
-    user_profile = get_object_or_404(UserProfile, user=request.user)
+    
+    if request.user.is_authenticated:
+        user_profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
         form = ReviewForm(request.POST)
