@@ -31,4 +31,4 @@ urlpatterns = [
     path('reviews/', include('reviews.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'the_cookie_dough_company.views.handler404'
+handler404 = 'cookie_dough_company.views.handler404'

@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -86,6 +87,10 @@ def product_detail(request, product_id):
         form = ReviewForm()
         product = get_object_or_404(Product, pk=product_id)
 
+    liked = False
+    if product.likes.filter(id=request.user.id):
+        liked = True
+
     context = {
         'product': product,
         'form': form,
@@ -158,3 +163,17 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def product_like(request, pk):
+    if request.user.is_authenticated:
+        product = get_object_or_404(Product, id=pk)
+        if product.likes.filter(id=request.user.id):
+            product.likes.remove(request.user)
+            messages.success(
+                request, 'Product unliked')
+        else:
+            product.likes.add(request.user)
+            messages.success(
+                request, 'Product liked')
+        return redirect('products')
