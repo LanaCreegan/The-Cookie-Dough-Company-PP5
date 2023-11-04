@@ -89,6 +89,16 @@ a.category-badge > span.badge:hover {
     color: #aab7c4;
 }
 
+#contact {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #F1F5F2;
+    z-index: -1;
+}
+
 /* -------------------------------- Media Queries */
 @media (min-width: 1200px) {
     .container {
