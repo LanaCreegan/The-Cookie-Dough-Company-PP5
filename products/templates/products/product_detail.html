@@ -37,6 +37,7 @@
                     <p class="mb-0">{{ product.name }}</p>
 
                     <!-- Likes -->
+                    {{ product.number_of_likes }}
                     {% if user.is_authenticated %}
                         {% if user in product.likes.all %}
                             <a href="{% url 'product_like' product.id %}"><i class="fa-solid fa-heart text-danger"></i></a> <!-- Unlike -->
