@@ -44,7 +44,20 @@
                         {% else %}
                             <a href="{% url 'product_like' product.id %}"><i class="fa-regular fa-heart text-danger"></i></a> <!-- Like -->
                         {% endif %}
+                        {% endif %}
+                   
+                        <br>
+
+                    <!-- Favourites -->
+                    {% if user.is_authenticated %}
+                    <span class="d-none d-lg-inline-block">Add to Favourites: </span>
+                    <a class="favourites_btn"
+                        href="{% url 'add_to_favourites' product.id %}">
+                        <i class="fa-regular fa-heart text-danger"></i>
+                    </a>
                     {% endif %}
+                        
+                      
 
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                     {% if product.category %}

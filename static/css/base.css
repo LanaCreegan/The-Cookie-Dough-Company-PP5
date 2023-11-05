@@ -99,6 +99,10 @@ a.category-badge > span.badge:hover {
     z-index: -1;
 }
 
+
+
+
+
 /* -------------------------------- Media Queries */
 @media (min-width: 1200px) {
     .container {
