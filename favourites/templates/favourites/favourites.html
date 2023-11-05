@@ -47,6 +47,9 @@
                                 <td class="py-3">
                                     <p class="my-0 product"><strong>€{{ product.product.price }}</strong></p>
                                 </td>
+                                <td class="py-3">
+                                    <a href="{% url 'remove_from_favourites' product.product.id %}"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                         {% endfor %}
                     </tbody>

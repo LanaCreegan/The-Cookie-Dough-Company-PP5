@@ -28,3 +28,16 @@ def add_to_favourites(request, product_id):
     messages.info(request, f"{product.name} has been added to your favourites!")
 
     return redirect(reverse("product_detail", args=[product.id]))
+
+
+def remove_from_favourites(request, product_id):
+  
+    user = get_object_or_404(UserProfile, user=request.user)
+    product = get_object_or_404(Product, pk=product_id)
+    Favourites.objects.filter(product=product, user_profile=user).delete()
+
+    messages.info(
+        request, f"{product.name} has been removed from your favourites!"
+    )
+
+    return redirect(reverse("product_detail", args=[product.id]))
