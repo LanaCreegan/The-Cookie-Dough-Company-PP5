@@ -210,7 +210,6 @@
             {% csrf_token %}
             {% for field in form  %}
                     <br>
-                    {{ field.errors }}
                     {{ field.label }} *
                     <br>
                     {{ field }}

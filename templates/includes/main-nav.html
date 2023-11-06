@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse text-center mt-2 mt-lg-0" id="main-nav">
   <ul class="navbar-nav w-auto mx-auto list-unstyled">
-      <li class="nav-item dropdown">
-          <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="home-link" data-bs-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item">
+          <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'home' %}" id="home-link">
               Home
           </a>
       </li>
@@ -28,5 +28,13 @@
                   Category</a>
           </div>
       </li>
+
+      <li class="nav-item">
+        <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'favourites' %}" id="favourites-link">
+            Favourites
+        </a>
+    </li>
+
+    </li>
   </ul>
 </div>
