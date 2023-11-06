@@ -99,7 +99,25 @@ a.category-badge > span.badge:hover {
     z-index: -1;
 }
 
+/*------FOOTER------*/
+footer {
+    padding: 64px 0;
+}
 
+.social-networks {
+    text-align: center;
+
+}
+
+.social-networks > li {
+    display: inline;
+    margin: 0 32px;
+}
+
+.social-networks i {
+    font-size: 110%;
+    color: #323031;
+}
 
 
 
