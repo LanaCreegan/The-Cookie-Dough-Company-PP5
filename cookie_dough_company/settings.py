@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-cookie-dough-company-pp5.herokuapp.com', '8000-lanacreegan-thecookiedo-tg062b5dyd8.ws-eu105.gitpod.io', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['the-cookie-dough-company-pp5-0eb16d1ddd0c.herokuapp.com/', '8000-lanacreegan-thecookiedo-tg062b5dyd8.ws-eu105.gitpod.io', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -115,7 +115,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -212,7 +212,6 @@ if 'USE_AWS' in os.environ:
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 
-'the-cookie-dough-company-pp5'
 # Stripe
 STANDARD_DELIVERY_PERCENTAGE = 10
 FREE_DELIVERY_THRESHOLD = 50
