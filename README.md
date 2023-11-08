@@ -28,7 +28,10 @@ The Cookie Dough Company is an e-commerce website in the field of food
 ### Colour Scheme 
 
 ### Fonts
+Both fonts are from Google Fonts.
+Montserrat is used for paragraphs and general text
 
+Lato is used for headings
 ### Wireframes
 Wireframes can be found here:
 - [Home Page](assets/images/home.png)
