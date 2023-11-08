@@ -29,6 +29,7 @@ The Cookie Dough Company is an e-commerce website in the field of food
 
 ### Fonts
 Both fonts are from Google Fonts.
+
 Montserrat is used for paragraphs and general text
 
 Lato is used for headings
