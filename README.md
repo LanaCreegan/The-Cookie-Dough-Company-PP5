@@ -44,6 +44,11 @@ The site uses two different marketing strategies, social media and a newsletter 
 
 - The newsletter signup form is located at the bottom of the footer.
 
+### Search Engine Optimisation
+To optimise the site for search engines, a sitemap.xml and robots.txt files have been created. 
+
+Long-tail and short-tail keywords were added to the meta tag within the base.html file. These were selected based on their relevance to the products.
+
 ## Features
 ### Nav Bar
 #### Links
