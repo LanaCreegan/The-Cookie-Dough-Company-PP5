@@ -262,13 +262,32 @@ The site uses two different marketing strategies, social media and a newsletter 
 - Javascript
 - Python
 
-### Programmes
+### Libraries
+- [Git](https://git-scm.com/) Version control
+- [Github](https://github.com/) Used to store the code repository 
+- [Gitpod](https://www.gitpod.io/) Used to build and edit code
+- [Django](https://www.djangoproject.com/) Python based framework to develop the site
+- [Bootstrap](https://getbootstrap.com/) Used for design
+- [Google fonts](https://fonts.google.com/) For fonts used throughout the site
+- [Font Awesome](https://fontawesome.com/) Icons used 
+- [AWS](https://aws.amazon.com/) Used to store static files and images
+- [PostgreSQL](https://www.elephantsql.com/) Database used
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Used to ender forms
+- [Google developer tools](https://developer.chrome.com/docs/devtools/) Used to fix problems and bugs
+- [Stripe](https://stripe.com/en-ie) Used to take payments
+- [Heroku](https://www.heroku.com/) Used to deploy the project
 
 ### Testing 
 
 ### Deployment 
 #### Github
 #### Forking
+- Log in to Github
+
+- Navigate to the Github repository 
+
+- Click Fork in the top right hand corner
+
 #### Clone 
 The repository can be cloned by following these steps:
 
@@ -305,7 +324,19 @@ Stripe is used to process payments at the checkout
 - From there click API keys for developers
 
 - Below Standard Keys are the Publishable key and Secret key
+
 ### Credits 
 #### Code 
 #### Media 
+All images taken from Unsplash
+- https://unsplash.com/photos/OfdDiqx8Cz8
+- https://unsplash.com/photos/rjf4FcmERGc
+- https://unsplash.com/photos/Ms9xBg3Gtr8
+- https://unsplash.com/photos/EnPlEZI4WfM
+- https://unsplash.com/photos/4fl4XVhH8Y4
+- https://unsplash.com/photos/H1uISjlRXJE
+- https://unsplash.com/photos/4Mh3AjljekQ
+- https://unsplash.com/photos/1rqk6XVnw44
+- https://unsplash.com/photos/JnpoOdKCm1Q
+
 #### Other 
