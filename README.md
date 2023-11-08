@@ -30,7 +30,12 @@ The Cookie Dough Company is an e-commerce website in the field of food
 ### Fonts
 
 ### Wireframes
-
+Wireframes can be found here:
+- [Home Page](assets/images/home.png)
+- [Products Page](assets/images/products.png)
+- [Bag Page](assets/images/bag.png)
+- [Checkout Page](assets/images/checkout.png)
+- [Checkout Success Page](assets/images/checkout-success.png)
 
 ### Database Scheme 
 
@@ -333,15 +338,15 @@ Stripe is used to process payments at the checkout
 ### Credits 
 #### Code 
 #### Media 
-All images taken from Unsplash
-- https://unsplash.com/photos/OfdDiqx8Cz8
-- https://unsplash.com/photos/rjf4FcmERGc
-- https://unsplash.com/photos/Ms9xBg3Gtr8
-- https://unsplash.com/photos/EnPlEZI4WfM
-- https://unsplash.com/photos/4fl4XVhH8Y4
-- https://unsplash.com/photos/H1uISjlRXJE
-- https://unsplash.com/photos/4Mh3AjljekQ
-- https://unsplash.com/photos/1rqk6XVnw44
-- https://unsplash.com/photos/JnpoOdKCm1Q
+All images taken from [Unsplash](https://unsplash.com/)
+- [Salted caramel](https://unsplash.com/photos/OfdDiqx8Cz8)
+- [Chocolate Chip](https://unsplash.com/photos/rjf4FcmERGc)
+- [Double Chocolate](https://unsplash.com/photos/Ms9xBg3Gtr8)
+- [Loftus Biscoff](https://unsplash.com/photos/EnPlEZI4WfM)
+- [Chocolate Orange](https://unsplash.com/photos/4fl4XVhH8Y4)
+- [Taster](https://unsplash.com/photos/H1uISjlRXJE)
+- [Mix](https://unsplash.com/photos/4Mh3AjljekQ)
+- [Brownie](https://unsplash.com/photos/1rqk6XVnw44)
+- [Sprinkle](https://unsplash.com/photos/JnpoOdKCm1Q)
 
 #### Other 
