@@ -32,6 +32,9 @@ body {
     z-index: -1;
 }
 
+#main-nav {
+    color: #3F2A2B !important;
+}
 
 .nav-link {
     width: fit-content;
@@ -43,8 +46,8 @@ a.category-badge > span.badge:hover {
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important;
+    background: #3F2A2B;
+    color: #E0DFD5 !important;
     border: 1px solid black;
 }
 
@@ -53,12 +56,13 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/*----- Toasts -----*/
+
 .message-container {
     position: fixed;
     top: 72px;
     right: 15px;
     z-index: 99999999999;
-    color: aqua;
 }
 
 .custom-toast {
