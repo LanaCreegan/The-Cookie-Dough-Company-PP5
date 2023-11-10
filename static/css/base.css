@@ -36,8 +36,16 @@ body {
     color: #3F2A2B !important;
 }
 
+.main-logo-link {
+    width: fit-content;
+}
+
 .nav-link {
     width: fit-content;
+}
+
+.text-black {
+    color: #000 !important;
 }
 
 a.category-badge > span.badge:hover {
@@ -125,11 +133,21 @@ footer {
 
 /* Mailchimp */
 #mc_embed_signup {
-    background:#fff; false;
+    background: white;
     clear:left; 
     font:14px Helvetica,Arial,sans-serif; 
     width: 600px;
 }
+
+/* Cards */
+
+.card-img-top{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+    
 
 
 /* -------------------------------- Media Queries */

@@ -36,10 +36,11 @@
         <!-- Logo -->
       <div class="row bg-white pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-              <a href="{% url 'home' %}" class="nav-link">
-                  <h2 id="logo">The Cookie Dough Company</h2>
+              <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                  <h2 id="logo" class="text-black">The Cookie Dough Company</h2>
               </a>
           </div>
+
           <!-- Search Bar -->
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <form method="GET" action="{% url 'products' %}">
@@ -53,16 +54,17 @@
                   </div>
               </form>
           </div>
+
           <!-- Accounts menu -->
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                  <li class="list-inline-item dropdown pr-3">
-                      <a class="nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <div class="text-center">
-                            <div class="icon"><i class="fas fa-user fa-lg"></i></div>
-                              <p class="my-0">My Account</p>
-                          </div>
-                      </a>
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <li class="list-inline-item dropdown">
+                    <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="text-center">
+                            <div><i class="fas fa-user fa-lg"></i></div>
+                            <p class="my-0">My Account</p>
+                        </div>
+                    </a>
                       <div class="dropdown-menu" aria-labelledby="user-options">
                           {% if request.user.is_authenticated %}
                               {% if request.user.is_superuser %}
@@ -90,6 +92,14 @@
                           </div>
                       </a>
                   </li>
+                  <li class="list-inline-item">
+                    <a class="nav-link d-block d-lg-none" href="{% url 'contact'%}">
+                        <div class="text-center">
+                            <div><i class="fa-regular fa-message"></i></div>
+                            <p>Contact Us</p>
+                        </div>
+                    </a>
+                </li>
               </ul>
           </div>
       </div>
@@ -134,57 +144,59 @@
 
     <!--Footer section-->
 <footer class="mt-auto py-4">
-    <div>
-        <ul class="social-networks">
-            <li>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Youtube channel (opens in a new tab)"><i
-                        class="fa-brands fa-youtube"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i
-                        class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i
-                        class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)"><i
-                        class="fa-brands fa-square-twitter"></i></a>
-            </li>
-        </ul>
-            <div class="col-12 col-md-6">
-              <div id="mc_embed_signup">
-                  <form action="https://gmail.us10.list-manage.com/subscribe/post?u=23e4da81c6bca32077ccfb4a4&amp;id=4afec52e9f&amp;f_id=002feae5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                      <div id="mc_embed_signup_scroll">
-                        <h3>Subscribe</h3>
-                        <p>Get exclusive offers and discounts codes by subscribing to our monthly newsletter</p>
-                          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                          <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-                      <div id="mce-responses" class="clear foot">
-                          <div class="response" id="mce-error-response" style="display: none;"></div>
-                          <div class="response" id="mce-success-response" style="display: none;"></div>
-                      </div>
-                  <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                      /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                      <input type="text" name="b_23e4da81c6bca32077ccfb4a4_4afec52e9f" tabindex="-1" value="">
-                  </div>
-                      <div class="optionalParent">
-                          <div class="clear foot">
-                              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                              <p style="margin: 0px auto;"><a href="http://eepurl.com/iDkfm6" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                          </div>
-                      </div>
-                  </div>
-              </form>
-              </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-8 offset-lg-2 d-flex align-items-center flex-column">
+                <ul class="social-networks">
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Youtube channel (opens in a new tab)"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Instagram page (opens in a new tab)"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Facebook page (opens in a new tab)"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Twitter page (opens in a new tab)"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                    </li>
+                </ul>
+                <div id="mc_embed_signup">
+                    <form action="https://gmail.us10.list-manage.com/subscribe/post?u=23e4da81c6bca32077ccfb4a4&amp;id=4afec52e9f&amp;f_id=002feae5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        <div id="mc_embed_signup_scroll">
+                            <h3>Subscribe</h3>
+                            <p>Get exclusive offers and discounts codes by subscribing to our monthly newsletter</p>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+                            <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                            <input type="text" name="b_23e4da81c6bca32077ccfb4a4_4afec52e9f" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iDkfm6" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+        </div>
     </div>
 </footer>
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
