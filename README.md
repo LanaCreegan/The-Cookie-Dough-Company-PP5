@@ -140,12 +140,12 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - Clicking the box opens up a dropdown menu with various options on how to sort the products.
 
 #### Products 
-![Product](assets/images/products.png)
+![Product](assets/images/products-2.png)
 - Each product card shows an image of the product, its name, price and category.
 
 ### Product Details 
 #### Product Info 
-![Product-Details](assets/images/products-2.png)
+![Product-Details](assets/images/product-details.png)
 - The product info section shows information about the product along with a button to add the item to the user's favourite list, and buttons to add the item to the bag in multiple quantities.
 
 - There is a like button at the top of the product info section, along with a count of how many likes a product has.
