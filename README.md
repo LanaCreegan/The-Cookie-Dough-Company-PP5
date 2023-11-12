@@ -61,6 +61,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 ## Features
 ### Nav Bar
 #### Links
+![Navbar](assets/images/navbar.png)
 - To help navigate the user around, there are four links to the main sections of the site at the top of every page.
 
 - The links collapse into a hamburger menu once the screen size becomes too small.
@@ -68,9 +69,11 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - The Product and all Product link drops down into a sub-menu where the user can navigate to all products or choose from two different categories.
 
 #### Search Bar
+![Search-bar](assets/images/search-bar.png)
 - The Search Bar is located in the middle of the navbar and can be used to search for products.
 
 #### Bag
+![Bag](assets/images/added-bag.png.png)
 - The bag is located to the right on the navbar, next the the accounts menu.
 
 - Users can see the total cost of the items in their bag underneath the bag icon.
@@ -78,6 +81,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - Clicking the bag icon brings users to the shopping bag page where they can see a summary of what they've added in.
 
 #### Account
+![Account](assets/images/account.png)
 - The accounts menu is located to the right on the navbar.
 
 - Clicking the icons opens a dropdown menu.
@@ -101,21 +105,26 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 
 ### Accounts
 #### Register Page 
+![Register](assets/images/sign-up.png)
 - The register page is used for a user to create an account.
 
 #### Login Page
+![Login](assets/images/sign-in.png)
 - The login page is used for users to log in with an existing account.
 
 #### Log Out Page
+![Logout](assets/images/sign-out.png)
 - The logout page is used to for users who are signed in to log out.
 
 ### Profile 
 #### Delivery Details
+![Delivery-Details](assets/images/order-details.png)
 - The delivery details section stores the user's delivery address and phone number.
 
 - The information that is used here is used to autofill the delivery address when placing an order.
 
 #### Order History 
+![Order-history](assets/images/order.png)
 - The order history section is a table that keeps a record of every order the user has placed.
 
 - The table displays the order number, date it was ordered, items ordered, quantities of items and the order total.
@@ -125,15 +134,18 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 
 ### All Products 
 #### Sorting 
+![Sorting](assets/images/sort.png)
 - The sort-by box is located to the top right of the products section.
 
 - Clicking the box opens up a dropdown menu with various options on how to sort the products.
 
 #### Products 
+![Product](assets/images/products.png)
 - Each product card shows an image of the product, its name, price and category.
 
 ### Product Details 
 #### Product Info 
+![Product-Details](assets/images/products-2.png)
 - The product info section shows information about the product along with a button to add the item to the user's favourite list, and buttons to add the item to the bag in multiple quantities.
 
 - There is a like button at the top of the product info section, along with a count of how many likes a product has.
@@ -141,6 +153,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - If the user is a super user, edit and delete buttons will appear beside the product image.
 
 #### Favourites 
+![Favourites](assets/images/favoruites.png)
 - The favourite button is located underneath the product's name.
 
 - Favouriting a product adds the product to the user's favourite items list, the user is notifited when they have favourited a product.
@@ -148,6 +161,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - On the favourites page, the user can delete the product from their favourites and are notifited when they have.
 
 #### Quantity 
+![Quantity](assets/images/quantity.png)
 - The quantity buttons are located beside the product image and are used to add items to the bag.
 
 - The plus and minus buttons increase and decrease the value.
@@ -159,6 +173,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - Clicking the 'Add to Bag' button when the input is blank adds one item to the bag.
 
 #### Reviews
+![Reviews](assets/images/reviews.png)
 - If the product has any reviews they will appear underneath the product details.
 
 - The reviews consist of the users written review, along with the user name and when the review was commented 
@@ -167,6 +182,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 
 ### Product Management
 #### Add Product
+![Add-Products](assets/images/add-product.png)
 - The add product page is accessed by the account dropdown menu, under product management and can only be accessed by superusers.
 
 - The user must fill out all the fields that are labelled 'required'. If the form is submitted with any of these fields left blank then an error message will appear above that particular field, notifying the user of the issue.
@@ -180,6 +196,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - Clicking the 'Add Product' button at the bottom of the form will create the product.
 
 #### Edit Product
+![Edit-Procucts](assets/images/edit-product.png)
 - The Edit product page can only be accessed by superusers.
 
 - The Edit Product page can be accessed by clicking the edit button located beside the image on the products detail page.
@@ -189,6 +206,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - Clicking the 'Update Product' button will save any changes made to the existing product.
 
 #### Delete Product
+![Delete-Products](assets/images/delete-product.png)
 - Only superusers can delete products.
 
 - The Delete Product button can be accessed by clicking the edit button located beside the image on the products detail page.
@@ -201,11 +219,13 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 
 ### Bag
 #### Items 
+![Bag-Items](assets/images/shopping-bag.png)
 - The bag page displays all items that the user has added to it.
 
 - The page will list the items added with its image, along with its names and SKU.
 
 #### Quantity and Price 
+![Quantity-Price](assets/images/quantity-price.png)
 - The price and quantity section includes the product's price, the quantity in the bag, and the subtotal of that item's line.
 
 - The quantity section has buttons either side for the user to increase or decrease the total of that item in the bag.
@@ -219,6 +239,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - Manually inputting the number zero or anything below and clicking update will remove the item from the bag.
 
 #### Total 
+![Total](assets/images/total.png)
 - At the end of the line items is a summary of the costs.
 
 - The summary features the bags total, delivery charges and the grand total.
@@ -229,6 +250,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 
 ### Checkout 
 #### Details 
+![Checkout](assets/images/order-details.png)
 - The details section appears on the left to the order summary.
 
 - The user fills out their contact details, delivery address, and card number here.
@@ -236,7 +258,10 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - If the user is signed in a checkbox to save the delivery information can be checked.
 
 - If the user is signed in and has delivery information saved, the delivery details and email address will be automatically filled in.
+
 #### Order Summary 
+![Order-Summary](assets/images/order-summary.png)
+
 - The order summary section appears on the right of the checkout details.
 
 - This section lists all the items about to be purchased, along with the quantity, order total, delivery charge and grand total.
@@ -244,11 +269,13 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - Below the order summary is a number reflecting the total number of items in the order.
 
 #### Card Details 
+![Card-Details](assets/images/card-details.png)
 - Below the delivery details is the card payment box which is run by Stripe.
 
 - At the end of the section is a button to complete the order or to return back to the bag. There is also a warning message informing the user of how much their card is about to be charged.
 
 #### Confirmation 
+![Confirmation](assets/images/order-confirmation.png)
 - Once the order has been processed the user is taken to the checkout success page.
 
 - This page summarises the completed order. It lists the order number, order date, the items ordered with their quantities, the delivery address, and the billing info.
@@ -259,11 +286,13 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 
 ### Contact
 #### Message
+![Contact](assets/images/contact.png)
 - The message section enables the user to send a message. All the fields are required.
 
 - Once all the fields are completed, hitting the 'Send Message' button will send the message.
 
 ### Toasts 
+![Toasts](assets/images/toasts.png)
 - Toasts appear in the top right-hand corner of the display informing the user of any actions they have performed.
 
 ### 404 page
