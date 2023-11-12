@@ -65,16 +65,16 @@
                             <p class="my-0">My Account</p>
                         </div>
                     </a>
-                      <div class="dropdown-menu" aria-labelledby="user-options">
+                      <div class="dropdown-menu bg-brown" aria-labelledby="user-options">
                           {% if request.user.is_authenticated %}
                               {% if request.user.is_superuser %}
-                                  <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                  <a href="{% url 'add_product' %}" class="dropdown-item text-white">Product Management</a>
                               {% endif %}
-                              <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                              <a href="{% url 'profile' %}" class="dropdown-item text-white">My Profile</a>
+                              <a href="{% url 'account_logout' %}" class="dropdown-item text-white">Logout</a>
                           {% else %}
-                              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                              <a href="{% url 'account_signup' %}" class="dropdown-item text-white">Register</a>
+                              <a href="{% url 'account_login' %}" class="dropdown-item text-white">Login</a>
                           {% endif %}
                       </div>
                   </li>
@@ -104,7 +104,7 @@
           </div>
       </div>
       <div class="row bg-light">
-        <nav class="navbar navbar-expand-lg w-100">
+        <nav class="navbar navbar-expand-lg w-100 bg-brown">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -130,6 +130,7 @@
           {% endwith %}
       {% endfor %}
   </div>
+  </body>
 {% endif %}
 
 
@@ -143,7 +144,7 @@
     {% endblock %}
 
     <!--Footer section-->
-<footer class="mt-auto py-4">
+<footer class="mt-auto py-6 bg-brown">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-8 offset-lg-2 d-flex align-items-center flex-column">
@@ -172,10 +173,10 @@
                 <div id="mc_embed_signup">
                     <form action="https://gmail.us10.list-manage.com/subscribe/post?u=23e4da81c6bca32077ccfb4a4&amp;id=4afec52e9f&amp;f_id=002feae5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                         <div id="mc_embed_signup_scroll">
-                            <h3>Subscribe</h3>
-                            <p>Get exclusive offers and discounts codes by subscribing to our monthly newsletter</p>
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+                            <h3 class="text-white">Subscribe</h3>
+                            <p class="text-white">Get exclusive offers and discounts codes by subscribing to our monthly newsletter</p>
+                            <div class="indicates-required text-white"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group text-white"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
                             <div id="mce-responses" class="clear foot">
                             <div class="response" id="mce-error-response" style="display: none;"></div>
                             <div class="response" id="mce-success-response" style="display: none;"></div>

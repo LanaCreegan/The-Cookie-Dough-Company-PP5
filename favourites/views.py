@@ -7,6 +7,7 @@ from .models import Favourites
 
 
 def favourites(request):
+    
    
     user = get_object_or_404(UserProfile, user=request.user)
     favourites = Favourites.objects.filter(user_profile=user)

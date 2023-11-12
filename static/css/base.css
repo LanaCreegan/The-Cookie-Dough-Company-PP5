@@ -28,12 +28,21 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: #F1F5F2;
+    background: #F7F9F7;
     z-index: -1;
 }
 
+/*----- Nav Bar ------*/
+.bg-brown {
+    background-color: #3F2A2B !important;
+}
+
+.bg-white {
+    background-color: #F7F9F7 !important;
+}
+
 #main-nav {
-    color: #3F2A2B !important;
+    background-color: #3F2A2B !important;
 }
 
 .main-logo-link {
@@ -53,10 +62,33 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.btn-brown {
+    background: #3F2A2B;
+    border: 1px solid #3F2A2B;
+}
+
+.btn-black {
+    border: 1px solid #3F2A2B;
+}
+
 .btn-outline-black {
     background: #3F2A2B;
     color: #E0DFD5 !important;
     border: 1px solid black;
+}
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #250001;
+    color: white;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #250001;
+    color: white !important;
 }
 
 .update-link,
@@ -64,6 +96,9 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.text-white {
+    color: #fff !important;
+}
 /*----- Toasts -----*/
 
 .message-container {
@@ -128,12 +163,12 @@ footer {
 
 .social-networks i {
     font-size: 110%;
-    color: #323031;
+    color: #F7F9F7;
 }
 
 /* Mailchimp */
 #mc_embed_signup {
-    background: white;
+    background: #3F2A2B;
     clear:left; 
     font:14px Helvetica,Arial,sans-serif; 
     width: 600px;
@@ -148,7 +183,6 @@ footer {
     object-fit: cover;
 }
     
-
 
 /* -------------------------------- Media Queries */
 @media (min-width: 1200px) {
