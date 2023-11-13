@@ -192,22 +192,23 @@
                 </div>
             </div>
         </div>
-
         {% if from_profile %}
-<div class="row my-3">
-    <div class="col-12 mb-3">
-        <a href="{% url 'profile' %}" class="btn link-btn mb-2 ml-5">
-            Back to Profile
-        </a>
+            <div class="row my-3">
+                <div class="col-12 mb-3">
+                    <a href="{% url 'profile' %}" class="btn link-btn mb-2">
+                        Back to Profile
+                    </a>
+                </div>
+            </div>
+            {% else %}
+            <div class="row my-3">
+                <div class="col-12 text-center text-md-left">
+                    <a href="{% url 'products' %}" class="btn link-btn btn-black">
+                        Continue Shopping
+                    </a>
+                </div>
+            </div>
     </div>
-</div>
-{% else %}
-<div class="row my-3">
-    <div class="col-12 text-center text-md-left pl-md-5">
-        <a href="{% url 'products' %}" class="btn link-btn btn-black">
-            Continue Shopping
-        </a>
-    </div>
-</div>
 {% endif %}
+    
 {% endblock %}
