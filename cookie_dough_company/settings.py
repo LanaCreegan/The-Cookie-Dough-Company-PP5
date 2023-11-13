@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['the-cookie-dough-company-pp5-0eb16d1ddd0c.herokuapp.com', '8000-lanacreegan-thecookiedo-tg062b5dyd8.ws-eu106.gitpod.io', '127.0.0.1', 'localhost']
 
