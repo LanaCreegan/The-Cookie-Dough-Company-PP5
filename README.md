@@ -1,7 +1,89 @@
-
-
 # Introduction
 The Cookie Dough Company is an e-commerce website in the field of food
+
+The website was built using the Django framework in Python
+
+## Contents 
+
+[User Experience (UX)](#user-experience-ux)
+* [User Stories](#user-stories)
+    - [EPIC | Inital setup, registration](#EPIC-|-Inital-setup-registration)
+    - [EPIC | View and Navigate products](#EPIC-|-View-and-Navigate-products)
+    - [EPIC | Purchasing and Checkout](#EPIC-|-Purchasing-and-Checkout)
+    - [EPIC | Admin and User Profile functionaility](#EPIC-|-Admin)
+[Design](#design)
+* [Colour Scheme](#colour-scheme)
+* [Fonts](#fonts)
+* [Imagery](#imagery)
+* [Wireframes](#wireframes)
+* [Database Schema](#database-schema)
+* [Business Model](#business-model)
+* [Marketing](#marketing)
+* [Search Engine Optimisation](#search-engine-optimisation)
+
+[Features](#features)
+* [Nav Bar](#nav-bar)
+    - [Links](#links)
+    - [Search Bar](#search-bar)
+    - [Bag](#bag)
+    - [Account](#account)
+* [Home page](#home-page)
+    - [Hero Image](#hero-image)
+    - [Footer](#footer)
+* [Account](#accounts)
+    - [Register Page](#register-page)
+    - [Login Page](#login-page)
+    - [Log Out Page](#log-out-page)
+* [Profile](#profile)
+    - [Delivery Details](#delivery-details)
+    - [Order History](#order-history)
+* [All Products](#all-products)
+    - [Sorting](#sorting)
+    - [Products](#products)
+* [Product Details](#product-details)
+    - [Product Info](#product-info)
+    - [Like Button](#like-button)
+    - [Quantity](#quantity)
+    - [Reviews](#reviews)
+    - [Add Review](#add-review)
+* [Product Management](#product-management)
+    - [Add Product](#add-product)
+    - [Edit Product](#edit-product)
+    - [Delete Product](#delete-product)
+* [Bag](#bag)
+    - [Items](#add-product)
+    - [Quantity and Price](#quantity-and-price)
+    - [Total](#total)
+* [Checkout](#checkout)
+    - [Details](#details)
+    - [Order Summary](#order-summary)
+    - [Payment](#payment)
+    - [Confirmation](#confirmation)
+* [Contact](#contact)
+    - [Message](#message)
+* [Toasts](#toasts)
+* [404 Page](#404-page)
+
+[Technologies Used](#technologies-used)
+* [Languages](#languages)
+* [Libraries](#libraries)
+
+[Testing](#testing)
+  
+[Deployment](#deployment)
+* [Github](#github)
+    -[Forking](#forking)
+    -[Clone](#clone)
+* [Heroku](#heroku)
+* [AWS](#clone)
+    -[S3](#s3)
+    -[IAM](#iam)
+* [Stripe](#Stripe)
+
+[Credits](#credits)
+* [Code](#code)
+* [Media](#media)
+
 
 ## User Experience (UX)
 ### User Stories
@@ -13,6 +95,7 @@ The Cookie Dough Company is an e-commerce website in the field of food
  - As a site user, I want to view a list of products so that I can purchase one
  - As a site user, I want to search through available products so that I can find a product by name or description
  - As a site user, I want to sort the available products so that I can Identify the best price and best rated 
+ - As a site user, I want to leave reviews on products so that I can let the business owner know my thoughts of the product
 
 
 #### Epic: Purchasing and Checkout
@@ -26,6 +109,8 @@ The Cookie Dough Company is an e-commerce website in the field of food
 
 ## Design
 ### Colour Scheme 
+To fit in with the sites theme I went for colours of cookies, the main colour being brown and then soft white to balance the darkness out.
+![Navbar](assets/images/colours.png)
 
 ### Fonts
 Both fonts are from Google Fonts.
@@ -42,6 +127,10 @@ Wireframes can be found here:
 - [Checkout Success Page](assets/images/checkout-success.png)
 
 ### Database Scheme 
+My original database scheme can be seen here:
+![Navbar](assets/images/database.png)
+
+This is not reflective of the final project as I had added reviews to the project.
 
 ### Business Model
 The business model for this store is a B2C (Business to Customer) model, as the business would be selling products directly from themselves to the customer.
@@ -49,7 +138,8 @@ The business model for this store is a B2C (Business to Customer) model, as the 
 ### Marketing
 The site uses two different marketing strategies, social media and a newsletter that users can sign up to.
 
-- Links to all the social media sites are located at the top of the footer.
+- Links to all the social media sites are located at the top of the footer. A Facebook page was set up for the business
+![Navbar](assets/images/facebook.png)
 
 - The newsletter signup form is located at the bottom of the footer.
 
@@ -61,7 +151,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 ## Features
 ### Nav Bar
 #### Links
-![Navbar](assets/images/navbar.png)
+![Navbar](assets/images/navbar-2.png)
 - To help navigate the user around, there are four links to the main sections of the site at the top of every page.
 
 - The links collapse into a hamburger menu once the screen size becomes too small.
@@ -73,7 +163,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - The Search Bar is located in the middle of the navbar and can be used to search for products.
 
 #### Bag
-![Bag](assets/images/added-bag.png.png)
+![Bag](assets/images/added-bag.png)
 - The bag is located to the right on the navbar, next the the accounts menu.
 
 - Users can see the total cost of the items in their bag underneath the bag icon.
@@ -90,11 +180,13 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 
 ### Home Page
 #### Hero Image
+![Hero-Image](assets/images/home-page.png)
 - The hero image displays a message welcoming the user to the site.
 
 - The image will change depending on the size of the screen.
 
 #### Footer
+![Footer](assets/images/footer.png)
 - The footer appears at the bottom of every page.
 
 - The footer contains social media links and a newsletter signup form.
@@ -151,6 +243,12 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - There is a like button at the top of the product info section, along with a count of how many likes a product has.
 
 - If the user is a super user, edit and delete buttons will appear beside the product image.
+
+#### Like button
+![Like-button](assets/images/like-button.png)
+- A like button is featured on the product details page.
+
+- Users can see from how many likes whether the product is popular or not
 
 #### Favourites 
 ![Favourites](assets/images/favoruites.png)
@@ -321,6 +419,7 @@ Long-tail and short-tail keywords were added to the meta tag within the base.htm
 - [Heroku](https://www.heroku.com/) Used to deploy the project
 
 ### Testing 
+- Testing can be found [here](TESTING.md).
 
 ### Deployment 
 #### Github
@@ -356,6 +455,58 @@ The repository can be cloned by following these steps:
 - Navigate to manual deploy and click on deploy branch
 
 ### AWS
+- Sign up to AWS which you can do [here](https://aws.amazon.com/).
+- Once you have created an account and logged in, under the All Services search for S3.
+- On the S3 page you will need to create a new bucket. To do this click the orange button that says Create Bucket.
+- Name the bucket and select your region. 
+- Under Object Ownership select ACLs enabled and leave the Object Ownership as Bucket owner preferred. 
+- Uncheck the Block all public access checkbox and check the warning box so that the bucket will be made public, then click create bucket. 
+- Click the bucket's name and navigate to the properties tab. Scroll to the bottom and under Static website hosting click edit and change the Static website hosting option to enabled. Copy the default values for the index and error documents and click save changes.
+- Navigate to the permissions tab, scroll down to the Cross-origin resource sharing (CORS) section, click edit and paste in the following code:  
+
+    [
+    {
+    "AllowedHeaders": [
+    "Authorization"
+    ],
+    "AllowedMethods": [
+    "GET"
+    ],
+    "AllowedOrigins": [
+    "*"
+    ],
+    "ExposeHeaders": []
+    }
+    ]
+
+- Scroll up to the Bucket Policy section. Click edit and then click Policy generator. 
+- From here under the select type of policy dropdown menu, select S3 Bucket Policy. Then inside Principle allow all principals by typing a *.
+- From the Actions dropdown menu select Get object. Then head back to the previous tab and locate the Bucket ARN number. Copy that, return to the policy generator and paste it in the field labelled Amazon Resource Name.
+- Click Add statement, then Generate Policy. Copy the policy that's been generated and paste it into the bucket policy editor.
+- Add a /* at the end of the resource key. This is to allow access to all resources in this bucket.
+- Save this, then scroll down to the Access control list section and click edit.
+- Next to Everyone (public access), check the list checkbox. This will pop up a warning box that you will also have to check, then click 'save'. 
+
+
+### IAM
+- In the search bar at the top of the window, search for IAM and select it.
+- Then click User Groups from the side bar, then click Create group.
+- Name the group and click Create group at the bottom of the page. 
+- Then from the sidebar click Policies, then Create policy.
+- Go to the JSON tab and click import managed policy. Search for S3 and select AmazonS3FullAccess and click import.
+- Go back to the bucket and copy the ARN number. Head back to this policy and update the Resource key to include the ARN, and another line with the ARN followed by a /*. 
+
+- Click Next: Tags, Next: Review, and on this page give the policy a name. Then click Create policy.
+- To attach it to the group that was created, click User groups, and click the group that was created earlier. Go to the permissions tab and click Add permission and from the dropdown click Attach policies. 
+- Find the policy just created, select it and click Add permissions.
+- To create a user to put in the group, select users from the sidebar and click Add user.  
+- Give the user a user name, check Programmatic Access, then click Next: Permissions. 
+- Select the group that has the policy attached and click Next: Tags, Next: Review, then Create user.
+- On the next page, download the CSV file. This contains the user's access key and secret access key. 
+
+- Back in S3, go to the bucket and click Create folder. Name the folder media and click Save. 
+- Inside the new media folder, click Upload, add files, and then select all your images.
+- Then under Permissions select the option Grant public-read access and click upload. 
 
 
 #### Stripe
@@ -370,6 +521,13 @@ Stripe is used to process payments at the checkout
 
 ### Credits 
 #### Code 
+- Boutique Ado was used as a basis throughout this project, with a lot of the functionality taken from it.
+
+- [Delboy DryDrops Repository](https://github.com/Delboy/DryDrops/tree/main) Code for the review feature was adapted from this repository, along with the structure of the readme file from this repository was used to inform this readme file.
+
+- [Stackoverflow](https://stackoverflow.com/) was also used to fix bugs and setup functionality.
+
+
 #### Media 
 All images taken from [Unsplash](https://unsplash.com/)
 - [Salted caramel](https://unsplash.com/photos/OfdDiqx8Cz8)
@@ -382,4 +540,3 @@ All images taken from [Unsplash](https://unsplash.com/)
 - [Brownie](https://unsplash.com/photos/1rqk6XVnw44)
 - [Sprinkle](https://unsplash.com/photos/JnpoOdKCm1Q)
 
-#### Other 

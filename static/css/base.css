@@ -103,7 +103,7 @@ a.category-badge > span.badge:hover {
 
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 84px;
     right: 15px;
     z-index: 99999999999;
 }
@@ -171,7 +171,6 @@ footer {
     background: #3F2A2B;
     clear:left; 
     font:14px Helvetica,Arial,sans-serif; 
-    width: 600px;
 }
 
 /* Cards */
@@ -182,8 +181,15 @@ footer {
     height: auto;
     object-fit: cover;
 }
-    
 
+ /* Mailchimp */
+.refferal_badge{
+    display: none !important;
+}
+
+#mce-EMAIL-HELPERTEXT.helper_text {
+    display: none !important;
+}
 /* -------------------------------- Media Queries */
 @media (min-width: 1200px) {
     .container {

@@ -22,7 +22,7 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Items in bag -->
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -88,6 +88,7 @@
                                 </tr>
                             {% endfor %}
                             <tr>
+                                <!-- Totals -->
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>

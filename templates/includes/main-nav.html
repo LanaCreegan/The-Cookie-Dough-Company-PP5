@@ -1,4 +1,3 @@
-
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
@@ -28,10 +27,16 @@
                     Category</a>
             </div>
         </li>
-
+        {% if request.user.is_authenticated %}
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'favourites' %}" id="favourites-link">
                 Favourites
+            </a>
+        </li>
+        {% endif %}
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-white mr-6" href="{% url 'contact'%}" id="favourites-link">
+                Contact Us
             </a>
         </li>
     </ul>

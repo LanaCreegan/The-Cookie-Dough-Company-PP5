@@ -37,8 +37,8 @@
                     <p class="mb-0">{{ product.name }}</p>
 
                     <!-- Likes -->
-                    {{ product.number_of_likes }}
                     {% if user.is_authenticated %}
+                    {{ product.number_of_likes }}
                         {% if user in product.likes.all %}
                             <a href="{% url 'product_like' product.id %}"><i class="fa-solid fa-heart text-danger"></i></a> <!-- Unlike -->
                         {% else %}
@@ -58,7 +58,7 @@
                     {% endif %}
                         
                       
-
+                    <!-- Admin Buttons -->
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
@@ -132,8 +132,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
-
                             <div class="col{% if s %}-12 mt-2{% endif %}">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">

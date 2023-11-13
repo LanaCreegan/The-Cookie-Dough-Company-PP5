@@ -7,7 +7,7 @@ from .forms import ReviewForm
 
 @login_required
 def edit_reviews(request, review_id):
-    """ Edit a review for a product """
+    """ Edit review for a product """
     review = get_object_or_404(Review, pk=review_id)
     if request.user.id != review.user.user.id:
         messages.error(request, 'Sorry, you do not have access to that.')
