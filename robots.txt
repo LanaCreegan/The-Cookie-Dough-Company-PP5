@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://the-cookie-dough-company-pp5-0eb16d1ddd0c.herokuapp.com/sitemap.xml
