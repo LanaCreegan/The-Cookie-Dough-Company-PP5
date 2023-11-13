@@ -105,6 +105,10 @@
 
 - Crispy forms not was working bootstrap 5/field.html. To fix this I installed cripsy-bootstrap 5, but have since changed to Bootstrap 4.
 
+- Images were their original size and not matching. This was fixed using aspect ratio in css.
+
+- The footer had two white blocks on either side in the order confirmation. To fix this all that was needed was en extra closing div.
+
 
 #### Unfixed:
 - The add to favourites button would not fill in when a user added the product to their favourites. To add a temporary fix this I added a toast to let the user know the product had been added to their favourites. I would like to go back and change it in the future to have the icon empty and then fill when added.
